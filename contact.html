@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html for consistency -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Aripak East Africa for inquiries, wholesale orders, or partnership opportunities.">
+    
+    <title>Contact Us | Aripak East Africa</title>
+    
+    <!-- Favicon and CSS links -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header (same as index.html for consistency) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Aripak East Africa Logo" width="180" height="60">
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About & CSR</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <address>
+                            Aripak East Africa<br>
+                            Business Corner Hse, Off RaceCourse Rd<br>
+                            Nairobi, Kenya
+                        </address>
+                        <a href="https://maps.google.com" class="btn btn-outline">View on Map</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+254 734 233 557</p>
+                        <p>Mon-Sat: 7am - 7pm EAT</p>
+                        <a href="tel:+254734233557" class="btn btn-outline">Call Now</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>aripakea@gmail.com</p>
+                        <p>Wholesale: aripakea@gmail.com</p>
+                        <a href="mailto:aripakea@gmail.com" class="btn btn-outline">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about our products, sourcing, or CSR initiatives? We'll respond within 24 hours.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="wholesale">Wholesale Order</option>
+                                <option value="csr">CSR Partnership</option>
+                                <option value="farmer">Farmer Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        
+                        <div class="form-message" id="contact-form-message"></div>
+                    </form>
+                </div>
+                
+                <div class="faq-container">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Do you offer international shipping?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we deliver countrywide. Delivery costs vary by destination.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What are your minimum wholesale order quantities?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our minimum wholesale order is 10kg per product. For first-time wholesale customers, we offer sample packs of 100g per product so you can test quality before larger orders.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How can I verify your products are authentically East African?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We provide full traceability documentation with every wholesale order, including farm location details. Our retail products feature QR codes that show the product journey from farm to package.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Do you offer farm visits for buyers?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We organize farm tours for wholesale buyers twice yearly (March and October). These include visits to our partner farms and processing facilities. Contact our sales team to schedule.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Our Location</h2>
+                <div class="map-container">
+                    <!-- Embedded Google Map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808559339345!2d36.82154831475399!3d-1.286385835980925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d664f5b7c9%3A0x1d3a00a5d7a1b0b0!2sNairobi%20Spice%20Market!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter Section (same as index.html) -->
+    <section class="newsletter">
+        <!-- ... same newsletter content as index.html ... -->
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="main-footer">
+        <!-- ... same footer content as index.html ... -->
+    </footer>
+
+    <!-- Shopping Cart Sidebar (same as index.html) -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <!-- ... same cart sidebar content as index.html ... -->
+    </aside>
+    
+    <!-- Overlay (same as index.html) -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/cart.js"></script>
+    <script src="js/contact-page.js"></script> <!-- New file for contact page specific JS -->
+
+    <script>
+    // Set active nav link
+    document.querySelector('.primary-navigation a[href="contact.html"]').classList.add('active');
+</script>
+</body>
+</html>
